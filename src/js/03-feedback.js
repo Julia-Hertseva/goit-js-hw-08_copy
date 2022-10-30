@@ -36,7 +36,7 @@ function updateForm() {
 function onFormSubmit(event) {
   event.preventDefault();
     console.log('keyOfForm', JSON.parse(savedForm));
-    form.reset();
+    event.currentTarget.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY);
 }
 
